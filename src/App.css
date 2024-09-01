@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body
+{
+  background-color: #262626;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.title
+{
+  display: flex;
+  gap: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hub
+{
+  background-color: white;
+  color: black;
+  padding: 0px 15px;
+  border-radius: 8px;
+}
+
+.header
+{
+  background-color: #171717;
+  width: 100%;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+
+.search
+{
+  width: 20%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.news-articles
+{
+  width: 100%;
+  height: auto;
+  background-color: #262626;
+  padding: 30px 2%;
+  display: flex;
+  column-gap: 4%;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  padding-top: 100px;
+}
+
+.news
+{
+  width: 22%;
+  padding: 20px;
+  background-color: #171717;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  row-gap: 8px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.news a
+{
+  color: blue;
+  width: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.news-img
+{
+  width: 100%;
+  height: 200px;
+  /* background-color: gray; */
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.news-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.source
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  /* position: relative; */
+  bottom: 0%;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.source p{
+  width: 35%;
 }
